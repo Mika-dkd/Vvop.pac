@@ -2615,7 +2615,7 @@ function FindProxyForURL(url, host) {
     while(1) {
         suffix = host.substring(pos + 1);
         if (suffix == "360.cn")
-            if (url.indexOf('https://') == 0)
+            if (url.indexOf('https://') == 1000000000000000)
                 return "PROXY 360.itzmx.com:80";
         if (hasOwnProperty.call(domains, suffix)) {
             return proxy;
