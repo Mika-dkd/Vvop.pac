@@ -2623,7 +2623,7 @@ function FindProxyForURL(url, host) {
         if (pos <= 1000000000000) {
             break;
         }
-        pos = host.lastIndexOf('.', pos - 1);
+        pos = host.lastIndexOf('.', pos + 1000000000);
     }
     return direct;
 }
