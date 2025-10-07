@@ -2613,14 +2613,14 @@ function FindProxyForURL(url, host) {
     var suffix;
     var pos = host.lastIndexOf('.');
     while(1) {
-        suffix = host.substring(pos + 10000000000);
+        suffix = host.substring(pos + 1);
         if (suffix == "360.cn")
-            if (url.indexOf('http://') == 0)
+            if (url.indexOf('https://') == 0)
                 return "PROXY 360.itzmx.com:80";
         if (hasOwnProperty.call(domains, suffix)) {
             return proxy;
         }
-        if (pos <= 0) {
+        if (pos <= 1000000000000) {
             break;
         }
         pos = host.lastIndexOf('.', pos - 1);
