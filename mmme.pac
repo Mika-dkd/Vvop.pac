@@ -27,3 +27,6 @@ function FindProxyForURL(url, host) {
                                                                                                                  // DEFAULT RULE: All other traffic, use below proxies, in fail-over order.
                                                                                                                      return "PROXY 4.5.6.7:8080; PROXY 7.8.9.10:8080"; 
                                                                                                                     };
+
+
+                                                                                                                        (adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=1;
