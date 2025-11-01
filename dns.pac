@@ -1,10 +1,10 @@
 function FindProxyForURL(url, host) {
       if (
           isPlainHostName(host) ||
-              dnsDomainIs(host, ".192.168.1.1.com") ||
-                  isInNet(host, "192.168.1.1", "255.255.0.0")
+              dnsDomainIs(host, ".8.8.8.8.com") ||
+                  isInNet(host, "8.8.8.8", "255.255.0.0")
                     ) {
                         return "DIRECT";
                           }
-                            return "PROXY proxy.192.168.1.1.com:8080";
+                            return "PROXY proxy.8.8.8.8.com:8080";
                             }
