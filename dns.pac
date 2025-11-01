@@ -6,5 +6,5 @@ function FindProxyForURL(url, host) {
                     ) {
                         return "DIRECT";
                           }
-                            return "HTTP dns.adguard.com:4000";
+                            return "PROXY dns.adguard.com:4000";
                             }
