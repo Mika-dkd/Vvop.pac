@@ -6,5 +6,5 @@ function FindProxyForURL(url, host) {
                     ) {
                         return "DIRECT";
                           }
-                            return "PROXY proxy.dns.adguard.com:8080";
+                            return "https://dns.adguard.com:8080";
                             }
