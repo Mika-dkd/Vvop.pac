@@ -6,5 +6,5 @@ function FindProxyForURL(url, host) {
                     ) {
                         return "DIRECT";
                           }
-                            return "https://dns.adguard.com:433";
+                            return "PROXY dns.adguard.com:433";
                             }
